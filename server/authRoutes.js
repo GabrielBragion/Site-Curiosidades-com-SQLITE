@@ -12,9 +12,6 @@ const CORRECT_PASSWORD = process.env.ADMIN_PASSWORD; // Certifique-se de que est
 // Processando o envio do formulário de login
 router.post("/login", (req, res) => {
   const password = req.body.password;
-    // Logando a senha inserida
-    console.log("Senha inserida:", password);
-    console.log("Senha correta:", CORRECT_PASSWORD);
   // Verificar se a senha inserida está correta
   if (password === CORRECT_PASSWORD) {
     // Se a senha estiver correta
