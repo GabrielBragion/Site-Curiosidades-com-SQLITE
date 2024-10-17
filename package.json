@@ -4,6 +4,7 @@
   "description": "Api para criar um gerador de curiosidades aleatorias",
   "main": "server/server.js",
   "scripts": {
+    "start": "node server/server.js",
     "dev": "nodemon server/server.js"
   },
   "author": "",
