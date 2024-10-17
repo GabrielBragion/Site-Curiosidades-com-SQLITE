@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #1b1b1b;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 960px;
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+}
+.logo a{
+    color: #1b1b1b;
+}
+.menu{
+    display: flex;
+    gap: 1.5rem;
+}
+.menu li a{
+    color: #1b1b1b;
+    font-weight: bold;
+    padding-block: 1rem;
+    position: relative;
+}
+.menu li a::before{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #1b1b1b;
+    position: absolute;
+    bottom: 12px;
+    transition: .3s;
+}.menu li a:hover::before{
+    width: 100%;
+}
+main{
+    margin-top: 2rem;
+    text-align: center;
+}
+#curiosidade, #curiosidade-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+}
+#curiosidade-form{
+    gap: 1rem;
+}
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-inline: auto;
+    margin-top: 4rem;
+    gap: .5rem;
+}
+#loginForm label{
+    align-self: flex-start;
+    font-weight: bold;
+}
+#loginForm button{
+    margin-top: 1rem;
+}
+textarea{
+    height: 200px;
+    margin-top: 1rem;
+    width: 100%;
+    resize: none;
+    padding: 1rem;
+}
+button {
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    color: #e4e4e4;
+    background-color: #1b1b1b;
+    border: 2px solid #1b1b1b;
+    font-weight: bold;
+
+}
+button:hover{
+    background-color: #252525;
+}
+input{
+    padding: .25rem;
+    font-size: 1rem;
+}
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+main.sobre h1{
+    margin-bottom: 4rem;
+}
+main.sobre p{
+    text-align: left;
+}
+main.sobre a{
+    color: #1b1b1b;
+}
+@media only screen and (max-width: 500px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+    header ul li{
+        font-size: .75rem;
+    }
+    main.home{
+        height: 80dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    main.adicionar h1{
+        margin-bottom: 4rem;
+    }
+    main.adicionar button{
+        width: 100%;
+    }
+  }
